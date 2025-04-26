@@ -28,7 +28,7 @@ const Login = () => {
       });
     }
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('https://git-jcs-backend.vercel.app/login', {
         email: data.email,
         password: data.password
       });
