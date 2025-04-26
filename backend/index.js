@@ -109,7 +109,7 @@ app.delete('/delete_teacherstaff/:id',delete_teacher);
 // add teacher staff
 app.post('/addteacher', upload.single('image'), Staff); // Use multer middleware to handle file upload
 // adming schema 
-app.post('https://projects-for-collage.vercel.app/admin',adminLogin);
+app.post('/admin',adminLogin);
  // update stoires 
  app.put('/updateStory/:id', upload.single('file'), updateStory);
  // getting student data by id 
