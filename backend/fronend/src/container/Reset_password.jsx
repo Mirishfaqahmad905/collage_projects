@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../container/css/Reset_password.css';
+// import '../container/css/Reset_password.css';
 import { useDispatch } from 'react-redux';
 import { setAdmin } from './reduxToolKit/userSlice';
 
