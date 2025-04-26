@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../container/css/Post.css'; // Assuming you have CSS for Post component
+import './css/post.css';// Assuming you have CSS for Post component
 
 const Post = () => {
   const [posts, setPosts] = useState([]);
