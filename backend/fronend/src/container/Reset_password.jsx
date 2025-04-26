@@ -39,7 +39,7 @@ const Reset_password = () => {
     }
 
     axios
-      .post('http://localhost:3000/reset_password', { ...data, token })
+      .post('https://collage-projects-ewyv.vercel.app/reset_password', { ...data, token })
       .then((res) => {
         setResponse(res.data.message);
          if(res.status==200){
