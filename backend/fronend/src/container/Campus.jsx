@@ -5,7 +5,7 @@ const Campus = () => {
   const [campusData, setCampusData] = useState([]); // Set default value as an empty array
 
   const fetchCampusData = () => {
-    axios.get('http://localhost:3000/getcampusData')
+    axios.get('https://jcsfrontend.vercel.app/getcampusData')
       .then((response) => {
         setCampusData(response.data.message);
          console.log("the campus data are ")
