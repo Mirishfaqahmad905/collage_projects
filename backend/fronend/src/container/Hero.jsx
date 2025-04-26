@@ -5,7 +5,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     'https://lh3.googleusercontent.com/p/AF1QipOKYUSMgVhH65rpLD_S0fN7E_Nn5H06skrFACBT=s1360-w1360-h1020',
-    'https://www.facebook.com/photo/?fbid=551531747222507&set=a.191948613180824',
+    'https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/476261153_640687918306889_8390343945738308948_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UIR-lSJMuZkQ7kNvwGy4HQM&_nc_oc=AdnzAV2nc__cLWs3ocyPu69BYnD3vnl1_O0Aw1hP0-5OxBP6dhCRpEckl4QO7wQa1QE&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=Nu-truW0ywbkGaQY9JtJ_A&oh=00_AfHJ7ONImw-CBmFHJ6uxs_3MJQbfDUYzgbuns2KO6n64rg&oe=6812EC30',
     'https://www.facebook.com/photo/?fbid=520100810365601&set=pcb.520101490365533'
   ];
 
