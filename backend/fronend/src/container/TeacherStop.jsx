@@ -7,7 +7,7 @@ const TeacherStop = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/getData");
+      const response = await axios.get("https://git-jcs-backend.vercel.app/getData");
       setData(response.data); // Set the fetched data (array) into state
       console.log(response.data); // Logging the data for verification
     } catch (err) {
