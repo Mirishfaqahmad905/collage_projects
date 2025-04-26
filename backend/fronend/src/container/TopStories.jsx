@@ -5,7 +5,7 @@ const TopStories = () => {
     const [data, setData] = useState([]);
  console.log(data);
     const fetchStoriesData = () => {
-        axios.get('http://localhost:3000/topStudents')
+        axios.get('https://git-jcs-backend.vercel.app/topStudents')
             .then((response) => {
                 setData(response.data); // Assuming the response is an array of stories
             })
