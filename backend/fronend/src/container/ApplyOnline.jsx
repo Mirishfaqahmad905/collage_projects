@@ -62,7 +62,7 @@ const ApplyOnline = () => {
       }
 
       // Make POST request to backend
-      const response = await axios.post('http://localhost:3000/applyForm', formPayload, {
+      const response = await axios.post('https://git-jcs-backend.vercel.app/applyForm', formPayload, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
