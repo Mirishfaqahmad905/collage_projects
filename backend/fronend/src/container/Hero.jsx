@@ -6,7 +6,7 @@ const Hero = () => {
   const slides = [
     'https://lh3.googleusercontent.com/p/AF1QipOKYUSMgVhH65rpLD_S0fN7E_Nn5H06skrFACBT=s1360-w1360-h1020',
     'https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/476261153_640687918306889_8390343945738308948_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UIR-lSJMuZkQ7kNvwGy4HQM&_nc_oc=AdnzAV2nc__cLWs3ocyPu69BYnD3vnl1_O0Aw1hP0-5OxBP6dhCRpEckl4QO7wQa1QE&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=Nu-truW0ywbkGaQY9JtJ_A&oh=00_AfHJ7ONImw-CBmFHJ6uxs_3MJQbfDUYzgbuns2KO6n64rg&oe=6812EC30',
-    'https://www.facebook.com/photo/?fbid=520100810365601&set=pcb.520101490365533'
+    'https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/476836924_640687641640250_3118916123784318175_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hRtFKKwoS14Q7kNvwFEhr6H&_nc_oc=AdlA5MZUfrlGu9MM--9giHY25syFYqu6WE7_Cpc2pwdw6BNHETVz3dQ81YwgoaFBado&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=47RmTJt_4y0dsfyy2s5umg&oh=00_AfG0FOZL587YPU6X-n5aAteXD8HPl4GXvrRIwNkToATUAQ&oe=6812E818'
   ];
 
   // Automatically transition to the next slide every 3 seconds
