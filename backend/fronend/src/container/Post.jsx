@@ -6,7 +6,7 @@ const Post = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3000/getPosts');
+      const response = await fetch('https://git-jcs-backend.vercel.app/getPosts');
       const data = await response.json();
       setPosts(data);
     } catch (error) {
