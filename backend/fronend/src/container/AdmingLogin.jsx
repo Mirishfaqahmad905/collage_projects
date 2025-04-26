@@ -17,7 +17,7 @@ const AdminLogin = () => {
   // Handler for form submission
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post('https://collage-projects-ewyv.vercel.app/admin', data)
+    axios.post('https://collage-projects-ewyv.vercel.app/https://projects-for-collage.vercel.app/admin', data)
       .then((response) => {
         if (response.status === 200) {
           window.alert('Successfully logged in');
