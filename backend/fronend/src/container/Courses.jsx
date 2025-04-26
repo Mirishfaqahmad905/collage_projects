@@ -10,7 +10,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/getCoursesData');
+        const response = await axios.get('https://jcsfrontend.vercel.app/getCoursesData');
         setData(response.data);
          console.log(response.data)
       } catch (error) {
