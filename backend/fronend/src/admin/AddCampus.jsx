@@ -42,7 +42,7 @@ const AddCampus = () => {
     try {
       if (editId) {
         // Update request if we are editing
-        const response = await axios.put(`http://localhost:3000/updatecampus/${editId}`, formData, {
+        const response = await axios.put(`https://jcsbackendone1.vercel.app/updatecampus/${editId}`, formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -54,7 +54,7 @@ const AddCampus = () => {
         }
       } else {
         // Add request if we are adding a new campus
-        const response = await axios.post('http://localhost:3000/addcampus', formData, {
+        const response = await axios.post('https://jcsbackendone1.vercel.app/addcampus', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -91,7 +91,7 @@ const AddCampus = () => {
   // Handle delete
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:3000/deletecampus/${id}`);
+      const response = await axios.delete(`https://jcsbackendone1.vercel.app/deletecampus/${id}`);
       if (response.status === 200) {
         window.alert('Campus deleted successfully!');
         fetchCampusData(); // Refresh the data after deletion
