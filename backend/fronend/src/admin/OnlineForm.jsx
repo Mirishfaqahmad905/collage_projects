@@ -14,7 +14,7 @@ const OnlineForm = () => {
 
     const fetchApplicationData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/apply/getapplyformdata');
+            const response = await axios.get('https://jcsbackendone1.vercel.app/apply/getapplyformdata');
             setApplyFormData(response.data.message);
         } catch (err) {
             console.error("Error fetching application data:", err);
@@ -24,7 +24,7 @@ const OnlineForm = () => {
 
     const downloadStudentData = async (id) => {
         try {
-            const response = await axios.get(`http://localhost:3000/apply/download_formdata/${id}`, {
+            const response = await axios.get(`https://jcsbackendone1.vercel.app/apply/download_formdata/${id}`, {
                 responseType: 'blob',
             });
             const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -39,7 +39,7 @@ const OnlineForm = () => {
         }
     };
     const sendMessageToAll = () => {
-        axios.post('http://localhost:3000/apply/sendMessageToAll',{
+        axios.post('https://jcsbackendone1.vercel.app/apply/sendMessageToAll',{
            subject:subject,
            message:message
         })
@@ -55,7 +55,7 @@ const OnlineForm = () => {
     };
      // deleting the route
      const DeleteIt=(id)=>{
-       axios.delete(`http://localhost:3000/delete_form_student_apply/${id}`).then((re)=>{
+       axios.delete(`https://jcsbackendone1.vercel.app/delete_form_student_apply/${id}`).then((re)=>{
          if(re.status==200){
             return window.alert("successfully deleted");
          }
