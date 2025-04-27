@@ -48,7 +48,7 @@ const AddTeacher = () => {
             if (editMode) {
                 console.log(editMode)
                 // If editMode is true, send a PUT request to update the teacher
-                await fetch(`http://localhost:3000/updateStaffById/${editId}`, {
+                await fetch(`https://jcsbackendone1.vercel.app/updateStaffById/${editId}`, {
                     method: 'PUT',
                     body: formDataToSend
                 });
@@ -80,7 +80,7 @@ const AddTeacher = () => {
 
     useEffect(() => {
         // Fetch the teacher data on component mount
-        axios.get("http://localhost:3000/getData")
+        axios.get("https://jcsbackendone1.vercel.app/getData")
             .then((res) => {
                 setMyData(res.data);
             })
@@ -103,7 +103,7 @@ const AddTeacher = () => {
 
     const DeleteStaff = (id) => {
         if (window.alert("Are you sure you want to delete this staff member?")) {
-            axios.delete(`http://localhost:3000/delete_teacherstaff/${id}`)
+            axios.delete(`https://jcsbackendone1.vercel.app/delete_teacherstaff/${id}`)
                 .then((response) => {
                     if (response.status === 200) {
                         alert("Successfully deleted the staff member");
