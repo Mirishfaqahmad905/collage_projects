@@ -20,7 +20,7 @@ const Contact = () => {
 
     try {
       // Send POST request to backend
-      const response = await axios.post('http://localhost:3000/user/contact', {
+      const response = await axios.post('https://jcsbackendone1.vercel.app/user/contact', {
         email: data.email,
         message: data.message,
       });
