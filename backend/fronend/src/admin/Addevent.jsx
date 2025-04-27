@@ -19,7 +19,7 @@ const Addevent = () => {
     formdata.append('image', image);
     console.log(formdata)
 
-    fetch('http://localhost:3000/postevents', {
+    fetch('https://jcsbackendone1.vercel.app/postevents', {
       method: 'POST',
       body: formdata,
     })
@@ -40,7 +40,7 @@ const Addevent = () => {
 
   };
  useEffect(() => {
-    axios.get('http://localhost:3000/geteventdata').then((res)=>{
+    axios.get('https://jcsbackendone1.vercel.app/geteventdata').then((res)=>{
          setData(res.data.message);
          console.log(data);
     }).catch((err)=>{
@@ -48,7 +48,7 @@ const Addevent = () => {
     })
  }, [])
  const deleteEvent=async(id)=>{
-    axios.delete(`http://localhost:3000/deleteevent/${id}`).then((res)=>{
+    axios.delete(`https://jcsbackendone1.vercel.app/deleteevent/${id}`).then((res)=>{
        if(res.status==200){
          window.alert('post deleted successfully');
        }
