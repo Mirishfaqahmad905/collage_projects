@@ -19,7 +19,7 @@ const AddPost = () => {
   const fetchPosts = async () => {
  
     try {
-      const response = await axios.get('http://localhost:3000/getPosts');
+      const response = await axios.get('https://jcsbackendone1.vercel.app/getPosts');
       setGetData(response.data);
     } catch (err) {
       console.log('Error fetching posts: ' + err);
@@ -44,13 +44,13 @@ const AddPost = () => {
     try {
       if (editingPostId) {
         // Update post
-        const response = await axios.put(`http://localhost:3000/updatePost/${editingPostId}`, formData);
+        const response = await axios.put(`https://jcsbackendone1.vercel.app/updatePost/${editingPostId}`, formData);
         if (response.status === 200) {
           alert('Post updated successfully.');
         }
       } else {
         // Add new post
-        const response = await axios.post('http://localhost:3000/postData', formData);
+        const response = await axios.post('https://jcsbackendone1.vercel.app/postData', formData);
         if (response.status === 201) {
           alert('Post created successfully.');
         }
@@ -72,7 +72,7 @@ const AddPost = () => {
   // Handle post deletion
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:3000/deletePost/${id}`);
+      const response = await axios.delete(`https://jcsbackendone1.vercel.app/deletePost/${id}`);
       if (response.status === 200) {
         alert('Post deleted successfully.');
         fetchPosts(); // Refresh the list after deletion
