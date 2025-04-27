@@ -22,13 +22,13 @@ const AddCourses = () => {
       let response;
       if (editingId) {
         // Edit Course if editingId is set
-        response = await axios.put(`http://localhost:3000/editCourse/${editingId}`, formData);
+        response = await axios.put(`https://jcsbackendone1.vercel.app/${editingId}`, formData);
         if (response.status === 200) {
           window.alert('Course updated successfully');
         }
       } else {
         // Add New Course
-        response = await axios.post('http://localhost:3000/addCourses', formData);
+        response = await axios.post('https://jcsbackendone1.vercel.app/addCourses', formData);
         if (response.status === 200) {
           window.alert('Course added successfully');
         }
@@ -45,7 +45,7 @@ const AddCourses = () => {
   // Fetch Courses Data
   const fetchCourses = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/getCoursesData');
+      const res = await axios.get('https://jcsbackendone1.vercel.app/getCoursesData');
       setData(res.data);
     } catch (err) {
       console.log('Error occurred while fetching data: ' + err);
@@ -59,7 +59,7 @@ const AddCourses = () => {
   // Delete Course Data
   const deleteData = async (_id) => {
     try {
-      const res = await axios.delete(`http://localhost:3000/deleteCourse/${_id}`);
+      const res = await axios.delete(`https://jcsbackendone1.vercel.app/deleteCourse/${_id}`);
       if (res.status === 200) {
         window.alert("The course has been successfully deleted");
         fetchCourses(); // Refresh courses list
