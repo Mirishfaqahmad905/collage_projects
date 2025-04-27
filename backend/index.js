@@ -20,7 +20,7 @@ const {addPost,GetPost,updatePost,deletePost,getPostById} =require('./AddPost');
 const {getTableCounts}=require('./Couting');
 const { AddCourses, getCourseData ,DeleteCourse,EditCourse}=require('./addCourses');
 const Connection = require('./conection'); // Database connection setup
-const PORT=process.env.PORT || 3000
+const PORT=process.env.PORT || 5000
 const app = express();
 
 // Middleware
