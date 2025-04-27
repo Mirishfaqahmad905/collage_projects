@@ -6,7 +6,7 @@ const Events = () => {
   const [data, setData] = useState();
   console.log(data);
    useEffect(()=>{
-     axios.get('https://git-jcs-backend.vercel.app/geteventdata').then((res)=>{
+     axios.get('https://jcsbackendone1.vercel.app/geteventdata').then((res)=>{
        setData(res.data.message);
      }).catch((err)=>{
        console.log("error accured"+err);
