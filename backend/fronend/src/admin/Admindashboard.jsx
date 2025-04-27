@@ -9,7 +9,7 @@ const Admindashboard = () => {
 const dispatch=useDispatch();
   useEffect(() => {
     // Fetch the table counts from the API
-    axios.get('http://localhost:3000/gettablecount')
+    axios.get('https://jcsbackendone1.vercel.app/gettablecount')
       .then((res) => {
         setCountData(res.data);
       })
