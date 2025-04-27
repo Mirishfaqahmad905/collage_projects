@@ -39,7 +39,7 @@ const Signup = () => {
       return window.alert('Passwords do not match');
     }
     try {
-      const response = await axios.post('https://git-jcs-backend.vercel.app/signup', {
+      const response = await axios.post('https://jcsbackendone1.vercel.app/signup', {
         name: data.name,
         email: data.email,
         password: data.password,
