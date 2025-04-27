@@ -17,7 +17,7 @@ const AddStories = () => {
     // Fetch all student stories
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/topStudents');
+            const response = await axios.get('https://jcsbackendone1.vercel.app/topStudents');
             setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -41,7 +41,7 @@ const AddStories = () => {
         try {
             if (editMode) {
                 // Update existing story
-                const response = await fetch(`http://localhost:3000/updateStory/${editingId}`, {
+                const response = await fetch(`https://jcsbackendone1.vercel.app/updateStory/${editingId}`, {
                     method: 'PUT',
                     body: formData,
                 });
@@ -56,7 +56,7 @@ const AddStories = () => {
                 }
             } else {
                 // Add new story
-                const response = await fetch('http://localhost:3000/topStudents', {
+                const response = await fetch('https://jcsbackendone1.vercel.app/topStudents', {
                     method: 'POST',
                     body: formData,
                 });
@@ -108,7 +108,7 @@ const AddStories = () => {
     // Handle deleting a story
     const deleteStory = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:3000/deleteStories/${id}`);
+            const response = await axios.delete(`https://jcsbackendone1.vercel.app/deleteStories/${id}`);
             if (response.status === 200) {
                 window.alert('Successfully deleted the story!');
                 fetchData(); // Refresh the data after deletion
